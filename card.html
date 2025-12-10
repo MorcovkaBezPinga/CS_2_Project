@@ -17,18 +17,24 @@
         Ваш браузер не поддерживает видео.
       </video>
     </div>
+    <style>
+      .my-block {
+        color: red;
+      }
+    </style>
+
     <header>
       <div class="logo">
         <a href="./index.html">TROPICK</a>
       </div>
 
       <nav class="nav-left">
-        <a href="./donat.html" target="_blank" class="nav-item_icon_donate"
+        <a href="./donat.html" class="nav-item_icon_donate"
           >🏪 Донат</a
         >
-        <a href="./card.html" target="_blank" class="nav-item_case">💼 Кейси</a>
+        <a href="./card.html" class="nav-item_case">💼 Кейси</a>
         <a class="nav-item">🔫 Скінченджер</a>
-        <a href="./clans.html" target="_blank" class="nav-item_clans"
+        <a href="./clans.html" class="nav-item_clans"
           >🛡 Клани</a
         >
         <a class="nav-item">⋮ Інше</a>
@@ -55,44 +61,57 @@
       <img class="banner" src="./images/5324x150.png" alt="banner" />
       <div class="cases_wrapper">
         <!-- Первый кейс -->
-        <div class="case_block">
-          <img
-            class="case_img"
-            src="./images/20250907144119867.png"
-            alt="case"
-          />
-          <div class="case_button">
-            <button class="backtound_button_1" type="button">Бистро</button>
-            <button class="backtound_button_2" type="button">Медленно</button>
-          </div>
-        </div>
-
-        <!-- Второй кейс -->
-        <div class="case_block">
-          <img
-            class="case_img"
-            src="./images/20250907144128403.png"
-            alt="case"
-          />
-          <div class="case_button">
-            <button class="backtound_button_1" type="button">Бистро</button>
-            <button class="backtound_button_2" type="button">Медленно</button>
-          </div>
-        </div>
-
-        <!-- Третий кейс -->
-        <div class="case_block">
-          <img
-            class="case_img"
-            src="./images/20251126120340521.png"
-            alt="case"
-          />
-          <div class="case_button">
-            <button class="backtound_button_1" type="button">Бистро</button>
-            <button class="backtound_button_2" type="button">Медленно</button>
-          </div>
-        </div>
+          <div class="cases">
+      <div class="case" onclick="openCaseMenu(1)">
+        <!-- КАРТИНКА КЕЙСА -->
+        <img src="./images/20250907144119867 (1).png" alt="" />
+        <h3 class="case_text">ЩОДЕННИЙ</h3>
+        <button class="case_info">Відкрити!</button>
+        <!-- ← СЮДА ВСТАВИТЬ КАРТИНКУ КЕЙСА -->
       </div>
+
+      <div class="case" onclick="openCaseMenu(2)">
+        <!-- КАРТИНКА КЕЙСА -->
+        <img class="case_img_2" src="./images/20250907144128403 (1).png" alt="" />
+        <h3 class="case_text">ЩОТИЖНЕВИЙ</h3>
+        <button class="case_info">Відкрити!</button>
+        <!-- ← СЮДА ВСТАВИТЬ КАРТИНКУ КЕЙСА -->
+      </div>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="caseModal" class="modal">
+      <div class="modal-content open-anim">
+        <span class="close" onclick="closeCaseMenu()">&times;</span>
+        <h2 id="caseTitle">ВІДЧИНЯЙ!</h2>
+
+        <div class="roll-window">
+          <div id="itemsLine" class="items-line"></div>
+          <div class="marker"></div>
+        </div>
+
+        <button id="rollBtn" onclick="rollItem()">Крутить</button>
+
+        <div id="finalResult"></div>
+      </div>
+    </div>
+
+    <!-- Инвентарь -->
+    <button class="inv-btn" onclick="toggleInventory()">Инвентарь</button>
+
+    <div id="inventoryPanel" class="inventory">
+      <h2>Ваш инвентарь</h2>
+
+      <button class="deleteAllBtn" onclick="deleteAllItems()">
+        Удалить всё
+      </button>
+
+      <div id="inventoryItems"></div>
+
+      <button class="esc" onclick="toggleInventory()">Закрыть</button>
+    </div>
+
+    <script src="script.js"></script>
     </main>
     <script src="script.js"></script>
   </body>
