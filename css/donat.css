@@ -285,17 +285,6 @@ header {
   color: #00a2ff;
   text-shadow: 0 0 8px #87b7ff;
 }
-.card_button_3 a {
-  text-decoration: none;
-  color: #000000;
-}
-.nav-item_clans {
-
-}
-.nav-item_clans:hover {
-  color: #00a2ff;
-  text-shadow: 0 0 8px #87b7ff;
-}
 .logo a {
   text-decoration: none;
   color: #ffffff;

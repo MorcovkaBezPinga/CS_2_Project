@@ -18,9 +18,9 @@ body {
 
 header {
   height: 82px;
-  width: 1200px;
+  width: 1230px;
   margin-left: 70px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .video-background video {
@@ -208,66 +208,72 @@ header {
   margin-top: -23px;
 }
 
-.info_card {
+.case_container {
   width: 1250px;
-  height: 150px;
   margin-left: 120px;
-  border-radius: 10px;
-  margin-top: 10px;
+  height: 400px;
+  margin-top: 50px;
 }
-.card button {
+.case {
+  width: 100px;
+  height: 70px;
+  display: inline-block;
+  margin-left: 220px;
+  gap: 10px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.case_button {
+  margin-left: 5px;
+  margin-top: 10px;
+  display: inline-flex;
+  gap: 15px;
+}
+.case_button button {
+  width: 100px;
+  height: 35px;
   cursor: pointer;
   border: none;
-  width: 350px;
-  height: 90px;
-  border-radius: 20px;
-  font-weight: 700;
+  border-radius: 5px;
   font-family: "Poppins", sans-serif;
-  display: inline;
-  justify-content: center;
-  margin-left: 50px;
-  margin-top: 20px;
-  font-size: 20px;
+  font-weight: 550;
 }
-.card button:hover {
+.backtound_button_1 {
+  background-color: #4cd7e1;
+}
+.backtound_button_2 {
+  background-color: #dede96;
+}
+.backtound_button_1:hover {
   background: #53ddff;
   box-shadow: 0 0 10px #00ffe1;
-  transition: 0.3s ease;
-  color: #282727;
-  text-shadow: 0 0 15px #008cff, 0 0 35px #008cff; /* синее свечение */
+  opacity: 0.8;
+  color: #000000;
+  box-shadow: 0 0 10px #5aaaff;
+  transition: 0.2s;
 }
-.card button:active {
+.backtound_button_2:hover {
+  background: #b7b77b;
+  box-shadow: 0 0 10px #aae71c;
+  opacity: 0.8;
+  color: #000000;
+  box-shadow: 0 0 10px #5aaaff;
+  transition: 0.2s;
+  color: #3a3a3a;
+}
+.backtound_button_2:active {
+  background: #87875b;
+}
+.backtound_button_1:active {
   background: #4a8c9d;
-}
-.card_button_1 {
-  background-color: #6b86ff;
-}
-.card_button_1 a {
-  text-decoration: none;
-  color: #000;
-}
-.card_button_2 {
-  background-color: #c17be7;
-  color: #000;
-}
-.card_button_3 {
-  background-color: color-mix(
-    in srgb-linear,
-    color percentage,
-    color percentage
-  );
 }
 .nav-item_case {
   text-decoration: none;
   color: #e4e4e4;
 }
 .nav-item_case:hover {
-  color: #00a2ff;
+   color: #00a2ff;
   text-shadow: 0 0 8px #87b7ff;
-}
-.card_button_2 a {
-  text-decoration: none;
-  color: #000;
 }
 .nav-item_clans {
   text-decoration: none;
@@ -285,18 +291,43 @@ header {
   color: #00a2ff;
   text-shadow: 0 0 8px #87b7ff;
 }
-.card_button_3 a {
-  text-decoration: none;
-  color: #000000;
-}
-.nav-item_clans {
-
-}
-.nav-item_clans:hover {
-  color: #00a2ff;
-  text-shadow: 0 0 8px #87b7ff;
-}
 .logo a {
   text-decoration: none;
   color: #ffffff;
+}
+.cases_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* расстояние между кейсами */
+  margin-top: 40px;
+}
+
+.case_block {
+  text-align: center;
+  width: 250px; /* фиксированная ширина каждого блока */
+}
+
+.case_img {
+  width: 100%;
+  height: auto;
+}
+
+.case_button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.hidden {
+  display: none;
+}
+
+.case_block {
+  width: 300px;
+  text-align: center;
+}
+
+.case_view {
+  transition: 0.3s;
 }

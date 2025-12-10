@@ -247,8 +247,7 @@ header {
   color: #000;
 }
 .card_button_2 {
-  background-color: #c17be7;
-  color: #000;
+  background-color: #b4a87d;
 }
 .card_button_3 {
   background-color: color-mix(
@@ -282,17 +281,6 @@ header {
   color: #e4e4e4;
 }
 .nav-item_icon_donate:hover {
-  color: #00a2ff;
-  text-shadow: 0 0 8px #87b7ff;
-}
-.card_button_3 a {
-  text-decoration: none;
-  color: #000000;
-}
-.nav-item_clans {
-
-}
-.nav-item_clans:hover {
   color: #00a2ff;
   text-shadow: 0 0 8px #87b7ff;
 }
